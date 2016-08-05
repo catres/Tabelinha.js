@@ -27,3 +27,6 @@ $("tabela").tabelinha({
   minMedia: 500
 });
 ```
+
+##Demo
+[a link](https://catres.github.io/Tabelinha.js/)
