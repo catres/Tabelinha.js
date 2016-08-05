@@ -29,4 +29,4 @@ $("tabela").tabelinha({
 ```
 
 ##Demo
-[a link](https://catres.github.io/Tabelinha.js/)
+[https://catres.github.io/Tabelinha.js/](https://catres.github.io/Tabelinha.js/)
