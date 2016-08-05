@@ -9,11 +9,23 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
+    <link rel="stylesheet" type="text/css" href="stylesheets/tabelinha.min.css" media="screen">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="javascripts/tabelinha.min.js"></script>
+    <script>
+      $(function() {
+        $(".titulares").tabelinha();
+        $(".reservas").tabelinha();
+      });
+    </script>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <title>Tabelinha.js by catres</title>
+
+
   </head>
 
   <body>
@@ -21,17 +33,14 @@
       <div class="inner">
         <h1>Tabelinha.js</h1>
         <h2>Plugin para criação de tabelas responsivas</h2>
-        <a href="https://github.com/catres/Tabelinha.js" class="button"><small>View project on</small> GitHub</a>
+        <a href="https://github.com/catres/Tabelinha.js" class="button"><small>Projeto no</small> GitHub</a>
       </div>
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h1>
-<a id="tabelinhajs" class="anchor" href="#tabelinhajs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tabelinha.js</h1>
 
-<p>Plugin para criação de tabelas responsivas</p>
 
 <h2>
 <a id="uso" class="anchor" href="#uso" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Uso</h2>
@@ -43,34 +52,245 @@
 <p>Configurações:</p>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>tabela<span class="pl-pds">"</span></span>).<span class="pl-en">tabelinha</span>({
-  <span class="pl-c">//Inicia a exibição no desktop pelo item especificado. Padrão: 0 (índice do primeiro item)</span>
+  <span class="pl-c">//Inicia a exibição no desktop pelo item especificado.</span>
+  <span class="pl-c">//Padrão: 0 (índice do primeiro item)</span>
   dtpItemInicial<span class="pl-k">:</span> <span class="pl-c1">0</span>,
-  <span class="pl-c">//Inicia a exibição no mobile pelo item especificado. Padrão: 0 (índice do primeiro item)</span>
+  <span class="pl-c">//Inicia a exibição no mobile pelo item especificado.</span>
+  <span class="pl-c">//Padrão: 0 (índice do primeiro item)</span>
   mobItemInicial<span class="pl-k">:</span> <span class="pl-c1">0</span>,
-  <span class="pl-c">//Número de itens a ser exibido por página no desktop. Padrão: 6</span>
+  <span class="pl-c">//Número de itens a ser exibido por página no desktop.</span>
+  <span class="pl-c">//Padrão: 6</span>
   numItens<span class="pl-k">:</span> <span class="pl-c1">6</span>,
-  <span class="pl-c">//Tamanho da tela para trocar a exibição de desktop para mobile. Padrão: 500 (correspondente a 500px de largura)</span>
+  <span class="pl-c">//Tamanho da tela para trocar a exibição de desktop para mobile.</span>
+  <span class="pl-c">//Padrão: 500 (correspondente a 500px de largura)</span>
   minMedia<span class="pl-k">:</span> <span class="pl-c1">500</span>
 });</pre></div>
+
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
+
+    <h3>Escalação da Seleção Alemã no Mineiraço</h3>
+    <div class="tab-container">
+      <table class="titulares">
+        <caption>Titulares</caption>
+        <thead>
+          <tr>
+            <th id="Jogador" width="20%">Jogador</th>
+            <th id="Clube" width="45%">Clube Atual</th>
+            <th id="Camisa">Camisa</th>
+            <th id="Posicao">Posi&ccedil;&atilde;o</th>
+            <th id="Gols">Gols</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="Jogador">Neuer</td>
+            <td headers="Clube">Bayern de Munique</td>
+            <td headers="Camisa">1</td>
+            <td headers="Posicao">GR</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Lahm</td>
+            <td headers="Clube">Bayern de Munique</td>
+            <td headers="Camisa">16</td>
+            <td headers="Posicao">LD (C)</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Boateng</td>
+            <td headers="Clube">Bayern de Munique</td>
+            <td headers="Camisa">20</td>
+            <td headers="Posicao">ZA</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Hummels</td>
+            <td headers="Clube">Bayern de Munique</td>
+            <td headers="Camisa">5</td>
+            <td headers="Posicao">ZA</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">H&ouml;wedes</td>
+            <td headers="Clube">Schalke 04</td>
+            <td headers="Camisa">4</td>
+            <td headers="Posicao">LE</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Schweinsteiger</td>
+            <td headers="Clube">Manchester United</td>
+            <td headers="Camisa">7</td>
+            <td headers="Posicao">MC</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Khedira</td>
+            <td headers="Clube">Juventus</td>
+            <td headers="Camisa">6</td>
+            <td headers="Posicao">MC</td>
+            <td headers="Gols">1</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">M&uuml;ller</td>
+            <td headers="Clube">Bayern de Munique</td>
+            <td headers="Camisa">13</td>
+            <td headers="Posicao">MC</td>
+            <td headers="Gols">1</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Kroos</td>
+            <td headers="Clube">Real Madrid</td>
+            <td headers="Camisa">18</td>
+            <td headers="Posicao">MA</td>
+            <td headers="Gols">2</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">&Ouml;zil</td>
+            <td headers="Clube">Arsenal</td>
+            <td headers="Camisa">8</td>
+            <td headers="Posicao">MC</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Klose</td>
+            <td headers="Clube">Lazio</td>
+            <td headers="Camisa">11</td>
+            <td headers="Posicao">AT</td>
+            <td headers="Gols">1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tab-container">
+      <table class="reservas">
+        <caption>Reservas</caption>
+        <thead>
+          <tr>
+            <th id="Jogador" width="20%">Jogador</th>
+            <th id="Clube" width="45%">Clube Atual</th>
+            <th id="Camisa">Camisa</th>
+            <th id="Posicao">Posi&ccedil;&atilde;o</th>
+            <th id="Gols">Gols</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="Jogador">Gro&szlig;kreutz</td>
+            <td headers="Clube">VfB Stuttgart</td>
+            <td headers="Camisa">2</td>
+            <td headers="Posicao">LD</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Ginter</td>
+            <td headers="Clube">Borussia Dortmund</td>
+            <td headers="Camisa">3</td>
+            <td headers="Posicao">ZA</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Sch&uuml;rrle</td>
+            <td headers="Clube">Borussia Dortmund</td>
+            <td headers="Camisa">9</td>
+            <td headers="Posicao">AT</td>
+            <td headers="Gols">2</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Podolski</td>
+            <td headers="Clube">Galatasaray</td>
+            <td headers="Camisa">10</td>
+            <td headers="Posicao">AT</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Zieler</td>
+            <td headers="Clube">Leicester City</td>
+            <td headers="Camisa">12</td>
+            <td headers="Posicao">GR</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Draxler</td>
+            <td headers="Clube">VfL Wolfsburg</td>
+            <td headers="Camisa">14</td>
+            <td headers="Posicao">MA</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Durm</td>
+            <td headers="Clube">Borussia Dortmund</td>
+            <td headers="Camisa">15</td>
+            <td headers="Posicao">LE/LD</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Mertesacker</td>
+            <td headers="Clube">Arsenal</td>
+            <td headers="Camisa">17</td>
+            <td headers="Posicao">ZA</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">G&ouml;tze</td>
+            <td headers="Clube">Borussia Dortmund</td>
+            <td headers="Camisa">19</td>
+            <td headers="Posicao">MA</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Weidenfeller</td>
+            <td headers="Clube">Borussia Dortmund</td>
+            <td headers="Camisa">22</td>
+            <td headers="Posicao">GR</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Kramer</td>
+            <td headers="Clube">B. M&ouml;nchengladbach</td>
+            <td headers="Camisa">23</td>
+            <td headers="Posicao">MC</td>
+            <td headers="Gols">-</td>
+          </tr>
+          <tr>
+            <td headers="Jogador">Mustafi</td>
+            <td headers="Clube">Valencia</td>
+            <td headers="Camisa">21</td>
+            <td headers="Posicao">ZA</td>
+            <td headers="Gols">-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer>
+      <h4>Fontes:</h4>
+      <p><a href="https://pt.wikipedia.org/wiki/Mineira%C3%A7o"><em>Mineira&ccedil;o</em> - Wikip&eacute;dia</a></p>
+      <p><a href="https://pt.wikipedia.org/wiki/Sele%C3%A7%C3%A3o_Alem%C3%A3_de_Futebol"><em>Sele&ccedil;&atilde;o Alem&atilde; de Futebol</em> - Wikip&eacute;dia</a></p>
+    </footer>
+
+
         </section>
 
         <aside id="sidebar">
           <a href="https://github.com/catres/Tabelinha.js/zipball/master" class="button">
             <small>Download</small>
-            .zip file
+            .zip
           </a>
           <a href="https://github.com/catres/Tabelinha.js/tarball/master" class="button">
             <small>Download</small>
-            .tar.gz file
+            .tar.gz
           </a>
 
-          <p class="repo-owner"><a href="https://github.com/catres/Tabelinha.js"></a> is maintained by <a href="https://github.com/catres">catres</a>.</p>
+          <p class="repo-owner"><a href="https://github.com/catres/Tabelinha.js"></a> Mantido por <a href="https://github.com/catres">catres</a>.</p>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+          <p><a href="https://pages.github.com">GitHub Pages</a> - Architect theme por <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
       </div>
     </div>
 
-  
+
   </body>
 </html>
