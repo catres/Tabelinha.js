@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo Tabelinha</title>
+	<link rel="stylesheet" type="text/css" href="../css/tabelinha.min.css">
+	<link rel="stylesheet" type="text/css" href="demo-tabelinha.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="../js/tabelinha.js"></script>
+	<script>
+		$(function() {
+		  $(".titulares").tabelinha();
+		  $(".reservas").tabelinha();
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Mineira&ccedil;o</h1>
+		<div class="tab-container">
+			<table class="titulares">
+				<caption>Titulares</caption>
+				<thead>
+					<tr>
+						<th id="Jogador" width="20%">Jogador</th>
+						<th id="Clube" width="45%">Clube Atual</th>
+						<th id="Camisa">Camisa</th>
+						<th id="Posicao">Posi&ccedil;&atilde;o</th>
+						<th id="Gols">Gols</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td headers="Jogador">Neuer</td>
+						<td headers="Clube">Bayern de Munique</td>
+						<td headers="Camisa">1</td>
+						<td headers="Posicao">GR</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Lahm</td>
+						<td headers="Clube">Bayern de Munique</td>
+						<td headers="Camisa">16</td>
+						<td headers="Posicao">LD (C)</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Boateng</td>
+						<td headers="Clube">Bayern de Munique</td>
+						<td headers="Camisa">20</td>
+						<td headers="Posicao">ZA</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Hummels</td>
+						<td headers="Clube">Bayern de Munique</td>
+						<td headers="Camisa">5</td>
+						<td headers="Posicao">ZA</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">H&ouml;wedes</td>
+						<td headers="Clube">Schalke 04</td>
+						<td headers="Camisa">4</td>
+						<td headers="Posicao">LE</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Schweinsteiger</td>
+						<td headers="Clube">Manchester United</td>
+						<td headers="Camisa">7</td>
+						<td headers="Posicao">MC</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Khedira</td>
+						<td headers="Clube">Juventus</td>
+						<td headers="Camisa">6</td>
+						<td headers="Posicao">MC</td>
+						<td headers="Gols">1</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">M&uuml;ller</td>
+						<td headers="Clube">Bayern de Munique</td>
+						<td headers="Camisa">13</td>
+						<td headers="Posicao">MC</td>
+						<td headers="Gols">1</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Kroos</td>
+						<td headers="Clube">Real Madrid</td>
+						<td headers="Camisa">18</td>
+						<td headers="Posicao">MA</td>
+						<td headers="Gols">2</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">&Ouml;zil</td>
+						<td headers="Clube">Arsenal</td>
+						<td headers="Camisa">8</td>
+						<td headers="Posicao">MC</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Klose</td>
+						<td headers="Clube">Lazio</td>
+						<td headers="Camisa">11</td>
+						<td headers="Posicao">AT</td>
+						<td headers="Gols">1</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="tab-container">
+			<table class="reservas">
+				<caption>Reservas</caption>
+				<thead>
+					<tr>
+						<th id="Jogador" width="20%">Jogador</th>
+						<th id="Clube" width="45%">Clube Atual</th>
+						<th id="Camisa">Camisa</th>
+						<th id="Posicao">Posi&ccedil;&atilde;o</th>
+						<th id="Gols">Gols</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td headers="Jogador">Gro&szlig;kreutz</td>
+						<td headers="Clube">VfB Stuttgart</td>
+						<td headers="Camisa">2</td>
+						<td headers="Posicao">LD</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Ginter</td>
+						<td headers="Clube">Borussia Dortmund</td>
+						<td headers="Camisa">3</td>
+						<td headers="Posicao">ZA</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Sch&uuml;rrle</td>
+						<td headers="Clube">Borussia Dortmund</td>
+						<td headers="Camisa">9</td>
+						<td headers="Posicao">AT</td>
+						<td headers="Gols">2</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Podolski</td>
+						<td headers="Clube">Galatasaray</td>
+						<td headers="Camisa">10</td>
+						<td headers="Posicao">AT</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Zieler</td>
+						<td headers="Clube">Leicester City</td>
+						<td headers="Camisa">12</td>
+						<td headers="Posicao">GR</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Draxler</td>
+						<td headers="Clube">VfL Wolfsburg</td>
+						<td headers="Camisa">14</td>
+						<td headers="Posicao">MA</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Durm</td>
+						<td headers="Clube">Borussia Dortmund</td>
+						<td headers="Camisa">15</td>
+						<td headers="Posicao">LE/LD</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Mertesacker</td>
+						<td headers="Clube">Arsenal</td>
+						<td headers="Camisa">17</td>
+						<td headers="Posicao">ZA</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">G&ouml;tze</td>
+						<td headers="Clube">Borussia Dortmund</td>
+						<td headers="Camisa">19</td>
+						<td headers="Posicao">MA</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Weidenfeller</td>
+						<td headers="Clube">Borussia Dortmund</td>
+						<td headers="Camisa">22</td>
+						<td headers="Posicao">GR</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Kramer</td>
+						<td headers="Clube">B. M&ouml;nchengladbach</td>
+						<td headers="Camisa">23</td>
+						<td headers="Posicao">MC</td>
+						<td headers="Gols">-</td>
+					</tr>
+					<tr>
+						<td headers="Jogador">Mustafi</td>
+						<td headers="Clube">Valencia</td>
+						<td headers="Camisa">21</td>
+						<td headers="Posicao">ZA</td>
+						<td headers="Gols">-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<footer>
+			<h4>Fontes:</h4>
+			<p><a href="https://pt.wikipedia.org/wiki/Mineira%C3%A7o"><em>Mineira&ccedil;o</em> - Wikip&eacute;dia</a></p>
+			<p><a href="https://pt.wikipedia.org/wiki/Sele%C3%A7%C3%A3o_Alem%C3%A3_de_Futebol"><em>Sele&ccedil;&atilde;o Alem&atilde; de Futebol</em> - Wikip&eacute;dia</a></p>
+		</footer>
+	</div>
+
+</body>
+</html>
