@@ -1,0 +1,6 @@
+{
+  "name": "Tabelinha.js",
+  "tagline": "Plugin para criação de tabelas responsivas",
+  "body": "# Tabelinha.js\r\nPlugin para criação de tabelas responsivas\r\n\r\n## Uso\r\n\r\nInicialização simples:\r\n\r\n```js\r\n$(\"tabela\").tabelinha();\r\n```\r\n\r\nConfigurações:\r\n\r\n```js\r\n$(\"tabela\").tabelinha({\r\n  //Inicia a exibição no desktop pelo item especificado. Padrão: 0 (índice do primeiro item)\r\n  dtpItemInicial: 0,\r\n  //Inicia a exibição no mobile pelo item especificado. Padrão: 0 (índice do primeiro item)\r\n  mobItemInicial: 0,\r\n  //Número de itens a ser exibido por página no desktop. Padrão: 6\r\n  numItens: 6,\r\n  //Tamanho da tela para trocar a exibição de desktop para mobile. Padrão: 500 (correspondente a 500px de largura)\r\n  minMedia: 500\r\n});",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
