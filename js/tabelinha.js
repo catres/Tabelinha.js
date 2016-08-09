@@ -149,6 +149,8 @@
           //Exibe o rodape, caso nao exista paginacao desktop
           if ($rodape.is(":hidden"))
             $rodape.show();
+          if ($paginas.children().hasClass("btn-inativo"))
+            $paginas.children().removeClass("btn-inativo");
           //Coloca a visualizacao item especificado nas configuracoes
           $linhas.removeClass("visivel");
           $linhas.eq(settings.mobItemInicial).addClass("visivel");
